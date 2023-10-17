@@ -1,8 +1,18 @@
-1<meta charset="UTF-8">
+<meta charset="UTF-8">
 
 <script>
 
-    function ingredienteMassa(acucar, farinhadeTrigo, ovo) {
+    var bolo = {
+        acucar,
+        farinhadeTrigo,
+        ovo
+    }
+
+    function bolo(acucar, farinhadeTrigo, ovo) {
+        this.acucar
+        this.farinhadeTrigo
+        this.ovo
+
         return {
             acucar,
             farinhadeTrigo,
@@ -10,9 +20,9 @@
         }
     }
 
-    var boloLaranja = newingredienteMassa("Laranja");
-    var boloMorango = ingredienteMassa("Morango", "Chocolate");
-    var boloAbacaxi = ingredienteMassa("Abacaxi")
+    var boloLaranja = new bolo("Laranja");
+    var boloMorango = new bolo("Morango", "Chocolate");
+    var boloAbacaxi = new bolo("Abacaxi")
 
 
 
